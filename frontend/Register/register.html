@@ -10,10 +10,23 @@
     <link rel="stylesheet" href="../Login/css/bootstrap.min.css">
     <!-- Style -->
     <link rel="stylesheet" href="../Login/css/style.css">
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <title>Wine library - Sign Up</title>
   </head>
   <body>
+
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../homePage/index.html">
+          <img src="../mainPage/images/logo.svg" alt="" width="200" height="60" class="d-inline-block align-text-top">
+        </a>
+        <h1>Wine Library</h1>
+        <form class="d-flex">
+          <a class="nav-link active" aria-current="page" href="../homePage/index.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="">About</a>
+        </form>
+      </div>
+    </nav>
 
   <div class="content">
     <div class="container">
@@ -47,7 +60,7 @@
                 <input type="password" class="form-control" id="password_confirmation" placeholder="Confirm password">
               </div>
               <div class="form-group last mb-4">
-                <input type="email" class="form-control" id="email" placeholder="E-mail">
+                <input type="email" class="form-control" id="email" required placeholder="E-mail">
               </div>
               <input type="submit" value="Register" onclick="register()" id="register_user" class="btn btn-block btn-primary">
               <span class="ml-auto"><a href="../Login/login.html" class="register-user">Back to Sign in page.</a></span> 

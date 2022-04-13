@@ -12,7 +12,7 @@ a:hover {
 }
 
 .section-products {
-    padding: 80px 0 54px;
+    padding: 30px 0 54px;
 }
 
 .section-products .header {
@@ -28,7 +28,7 @@ a:hover {
 .section-products .header h2 {
     font-size: 2.2rem;
     font-weight: 400;
-    color: #080808; 
+    color: #000000; 
 }
 
 .section-products .single-product {
@@ -76,17 +76,17 @@ a:hover {
 }
 
 .section-products #product-4 .part-1::before {
-    background: url("http://www.vina-prodan.hr/sites/default/files/prodan_malvazija_istarska.jpg") no-repeat center;
+    background: url("https://vinepair.com/wp-content/uploads/2019/12/Chateau-Fonplegade-Saint-Emilion-Grand-Cru-Class%C3%A9-2012.png") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-5 .part-1::before {
-    background: url("https://cdn2.cloud-hub.eu/MediaServer/Photos/Download/201113?Format=5&v=23.8.2020.%2015:17:28") no-repeat center;
+    background: url("https://www.calferu.com/13578-thickbox_default/nuviana-white-wine.jpg") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-6 .part-1::before {
-    background: url("https://static.jutarnji.hr/images/slike/2021/08/20/12229641.jpg") no-repeat center;
+    background: url("https://www.woolworths.co.za/images/elasticera/New_Site/Food/Content/Simonsig_Chenin_Blanc.jpg") no-repeat center;
     background-size: cover;
 
 }.section-products #product-7 .part-1::before {
