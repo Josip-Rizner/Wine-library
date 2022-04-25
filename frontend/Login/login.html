@@ -1,33 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js"></script>
+  <title>Wine library - Sign In</title>
+</head>
 
-    <title>Wine library - Sign In</title>
-  </head>
-  <body>
-
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../homePage/index.html">
-          <img src="../mainPage/images/logo.svg" alt="" width="200" height="60" class="d-inline-block align-text-top">
-        </a>
-        <h1>Wine Library</h1>
-        <form class="d-flex">
-          <a class="nav-link active" aria-current="page" href="../mainPage/index.html">Home</a>
-        </form>
-      </div>
-    </nav>
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+      <h1>
+        <a href="../homePage/index.html">Wine Library</a>
+      </h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="../homePage/index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="../Register/register.html">Sign up</a></li>
+    </div>
+  </header>
 
   <div class="content">
     <div class="container">
@@ -39,26 +42,31 @@
           <div class="row justify-content-center">
             <div class="col-md-8">
               <div class="mb-4">
-              <h1>Sign In</h1>
-              <p class="mb-4"></p>
-            </div>
-            <form>
-              <div class="form-group">
-                <input type="text" class="form-control" id="username" required placeholder="username">
+                <h1>Sign In</h1>
+                <p class="mb-4"></p>
               </div>
-              <div class="form-group last mb-4">
-                <input type="password" class="form-control" id="password" required placeholder="password">
+              <div id="login-error-msg-holder">
+                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
               </div>
-              <input type="submit" value="Sign in" id="submit_sign_in" class="btn btn-block btn-primary" >
-              <span class="ml-auto">
-                <a href="../Register/register.html" class="register-user">Dont have an account? Register here!</a>
-              </span> 
-            </form>
+              <form onsubmit="return false">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="username" required placeholder="username">
+                </div>
+                <div class="form-group last mb-4">
+                  <input type="password" class="form-control" id="password" required placeholder="password">
+                </div>
+                <input type="submit" value="Sign in" id="submit_sign_in" onclick="login()"
+                  class="btn btn-block btn-primary">
+                <span class="ml-auto">
+                  <a href="../Register/register.html" class="register-user">Dont have an account? Register here!</a>
+                </span>
+              </form>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </body>
+</body>
+
 </html>
