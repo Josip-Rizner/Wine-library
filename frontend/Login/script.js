@@ -1,8 +1,8 @@
 function login() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    var loginButton = document.getElementById("submit_sign_in");
-    var loginErrorMsg = document.getElementById("login-error-msg");
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+    let loginButton = document.getElementById("submit_sign_in");
+    let loginErrorMsg = document.getElementById("login-error-msg");
 
     loginButton.addEventListener("click", (e) => {
         e.preventDefault();
