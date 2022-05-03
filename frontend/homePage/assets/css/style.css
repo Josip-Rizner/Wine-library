@@ -24,7 +24,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
 }
 #header.header-scrolled {
   top: 0;
@@ -66,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 #main_part {
   width: 100%;
   height: 100vh;
-  background: url("../img/test.jpg") top center;
+  background: url("../img/Background.png") top center;
   background-size: cover;
   position: relative;
   padding: 0;

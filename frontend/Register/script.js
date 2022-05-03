@@ -8,7 +8,6 @@ function register(){
     let password = document.getElementById("password").value;
     let passwordConfirmation = document.getElementById("password_confirmation").value;
     let email = document.getElementById("email").value; 
-
     if(firstName == ""){
         alert("First name required!")
     }
