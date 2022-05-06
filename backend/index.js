@@ -1,5 +1,5 @@
 import connectToServer from './server.js'
-import connectToDatabase from './database.js'
+import connectToDatabase from './database/mongo.js'
 
 connectToServer()
 connectToDatabase()
