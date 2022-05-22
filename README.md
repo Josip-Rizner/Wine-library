@@ -9,7 +9,7 @@ Our website is inviting because it provides faster access to wine data due to no
 
 ## Technologies
 
-frontend -> javasctript , HTML, CSS, bootstrap
+frontend -> javascript , HTML, CSS, bootstrap
 
 backend -> nodejs, express, mongoDB
 
