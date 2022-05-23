@@ -7,7 +7,7 @@ let validateEmail = email => {
 }
 
 let validatePassword = password => {
-  return /^[^±!@£$%^&*_+§¡€#¢§¶•ªº«\\/<>?:;|=.,123456789]{2,25}$/.test(password)
+  return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$/.test(password)
 }
 
 const userSchema = new Schema(
