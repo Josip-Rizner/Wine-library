@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import {
+  indexGet,
   signupGet,
   signupPost,
   loginGet,
@@ -7,8 +8,11 @@ import {
   logoutGet
 } from './controller.js'
 
+
+
 export const routerUser = Router()
 
+routerUser.get('/', indexGet)
 routerUser.get('/signup', signupGet)
 routerUser.post('/signup', signupPost)
 routerUser.get('/login', loginGet)

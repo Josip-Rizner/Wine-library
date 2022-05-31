@@ -42,7 +42,7 @@ export async function editWine(req, id) {
     imageUrl: imageUrl,
     country : country, 
     year: year, 
-    type : type, 
+    type : type,   
     ABV : ABV, 
     color : color, 
     size : size, 

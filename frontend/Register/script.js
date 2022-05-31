@@ -1,7 +1,7 @@
 var emailArray=[];
 var passwordArray=[];
 
-function register(){
+/*function register(){
     let firstName = document.getElementById("first_name").value;
     let secondName = document.getElementById("second_name").value;
     let username = document.getElementById("username").value;
@@ -43,4 +43,29 @@ function register(){
         alert(email + " is already register.");
         return ;
     }
-}
+}*/
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  // get values
+  //const email = form.email.value;
+  //const password = form.password.value;
+  let firstName = document.getElementById("first_name").value;
+  let secondName = document.getElementById("second_name").value;
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+  let email = document.getElementById("email").value; 
+
+  try {
+    const res = await fetch('/signup', { 
+      method: 'POST', 
+      body: JSON.stringify({ firstName, secondName, username, password, email }),
+      headers: {'Content-Type': 'application/json'}
+    });
+  }
+  catch (err) {
+    console.log(err);
+  }
+});
