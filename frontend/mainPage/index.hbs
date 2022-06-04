@@ -2,188 +2,344 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css'>
-	  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
-    <link
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+  <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
-	  <link rel="stylesheet" href="/mainPage/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <title>Wine library</title>
+  <link rel="stylesheet" href="/mainPage/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="/mainPage/script.js"></script>
+  <title>Wine library</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="/mainPage/images/logo.svg" alt="" width="200" height="60" class="d-inline-block align-text-top">
-          </a>
-          <h1>Wine Library</h1>
-          <form class="d-flex">
-            <a class="nav-link active" aria-current="page" href="../logout">Sign out</a>
-          </form>
-        </div>
-      </nav>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/mainPage/images/logo.svg" alt="" width="200" height="60" class="d-inline-block align-text-top">
+      </a>
+      <h1>Wine Library</h1>
+      <form class="d-flex">
+        <a class="nav-link active" aria-current="page" href="../logout">Sign out</a>
+      </form>
+    </div>
+  </nav>
 
-      <section class="section-products">
-        <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-md-8 col-lg-6">
-              <div class="header">
-                <h2>Most Popular Wines</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-    
-            <div class="col-md-6 col-lg-4 col-xl-3">
-              <div id="product-1" class="single-product">
-                <div class="part-1">
-                  <ul>
-                    <li><a href="#"><i class="fas fa-edit"></i></a></li>
-                  </ul>
-                </div>
-                <div class="part-2">
-                  <h3 class="product-title">Wine 1</h3>
-                  <h4 class="product-old-price">$71.99</h4>
-                  <h4 class="product-price">Something from database</h4>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-6 col-lg-4 col-xl-3">
-              <div id="product-2" class="single-product">
-                <div class="part-1">
-                  <span class="discount">15% off</span>
-                  <ul>
-                    <li><a href="#"><i class="fas fa-edit"></i></a></li>
-                  </ul>
-                </div>
-                <div class="part-2">
-                  <h3 class="product-title">Wine 2</h3>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-6 col-lg-4 col-xl-3">
-              <div id="product-3" class="single-product">
-                <div class="part-1">
-                  <ul>
-                    <li><a href="#"><i class="fas fa-edit"></i></a></li>
-                  </ul>
-                </div>
-                <div class="part-2">
-                  <h3 class="product-title">Wine 3</h3>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-6 col-lg-4 col-xl-3">
-              <div id="product-4" class="single-product">
-                <div class="part-1">
-                  <span class="new">new</span><!--ako ocemo da pise new iznad slike(kao novo u ponudi)-->
-                  <ul>
-                    <li><a href="#"><i class="fas fa-edit"></i></a></li>
-                  </ul>
-                </div>
-                <div class="part-2">
-                  <h3 class="product-title">Wine 4</h3>
-                  <h4 class="product-price">Something</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 col-xl-3">
-              <div id="product-5" class="single-product">
-                <div class="part-1">
-                  <span class="new">new</span><!--ako ocemo da pise new iznad slike(kao novo u ponudi)-->
-                  <ul>
-                    <li><a href="#"><i class="fas fa-edit"></i></a></li>
-                  </ul>
-                </div>
-                <div class="part-2">
-                  <h3 class="product-title">Wine 5</h3>
-                  <h4 class="product-price">Something</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 col-xl-3">
-              <div id="product-6" class="single-product">
-                <div class="part-1">
-                  <span class="new">new</span><!--ako ocemo da pise new iznad slike(kao novo u ponudi)-->
-                  <ul>
-                    <li><a href="#"><i class="fas fa-edit"></i></a></li>
-                  </ul>
-                </div>
-                <div class="part-2">
-                  <h3 class="product-title">Wine 6</h3>
-                  <h4 class="product-price">Something</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 col-xl-3">
-              <div id="product-7" class="single-product">
-                <div class="part-1">
-                  <ul>
-                    <li><a href="#"><i class="fas fa-edit"></i></a></li>
-                  </ul>
-                </div>
-                <div class="part-2">
-                  <h3 class="product-title">Wine 7</h3>
-                  <h4 class="product-price">Something</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 col-xl-3">
-              <div id="product-8" class="single-product">
-                <div class="part-1">
-                  <ul>
-                    <li><a href="#"><i class="fas fa-edit"></i></a></li>
-                  </ul>
-                </div>
-                <div class="part-2">
-                  <h3 class="product-title">Wine 8</h3>
-                  <h4 class="product-price">Something</h4>
-                </div>
-              </div>
-            </div>
-
+  <section class="section-products">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="header">
+            <h2>Most Popular Wines</h2>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="row">
 
-      <section class="section-products">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-md-8 col-lg-6">
-            <div class="header">
-              <h2>Add your wines and explore the library</h2>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-1" class="single-product">
+            <div class="part-1">
+              <ul>
+                <li><a href="#"><i class="fas fa-edit" id="edit" data-bs-toggle="modal"
+                      data-bs-target="#editModal"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Wine 1</h3>
+              <h4 class="product-old-price">$71.99</h4>
+              <h4 class="product-price">Something from database</h4>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3">
-          <div id="costume_product" class="single-product">
-            <div class="part-1 border">
+          <div id="product-2" class="single-product">
+            <div class="part-1">
+              <span class="discount">15% off</span>
               <ul>
-                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-edit" id="edit" data-bs-toggle="modal"
+                      data-bs-target="#editModal"></i></a></li>
               </ul>
             </div>
             <div class="part-2">
-              <h3 class="product-title">Add wine</h3>
-              <h4 class="product-price">Something from database</h4>
+              <h3 class="product-title">Wine 2</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-3" class="single-product">
+            <div class="part-1">
+              <ul>
+                <li><a href="#"><i class="fas fa-edit" id="edit" data-bs-toggle="modal"
+                      data-bs-target="#editModal"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Wine 3</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-4" class="single-product">
+            <div class="part-1">
+              <span class="new">new</span>
+              <!--ako ocemo da pise new iznad slike(kao novo u ponudi)-->
+              <ul>
+                <li><a href="#"><i class="fas fa-edit" id="edit" data-bs-toggle="modal"
+                      data-bs-target="#editModal"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Wine 4</h3>
+              <h4 class="product-price">Something</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-5" class="single-product">
+            <div class="part-1">
+              <span class="new">new</span>
+              <!--ako ocemo da pise new iznad slike(kao novo u ponudi)-->
+              <ul>
+                <li><a href="#"><i class="fas fa-edit" id="edit" data-bs-toggle="modal"
+                      data-bs-target="#editModal"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Wine 5</h3>
+              <h4 class="product-price">Something</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-6" class="single-product">
+            <div class="part-1">
+              <span class="new">new</span>
+              <!--ako ocemo da pise new iznad slike(kao novo u ponudi)-->
+              <ul>
+                <li><a href="#"><i class="fas fa-edit" id="edit" data-bs-toggle="modal"
+                      data-bs-target="#editModal"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Wine 6</h3>
+              <h4 class="product-price">Something</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-7" class="single-product">
+            <div class="part-1">
+              <ul>
+                <li><a href="#"><i class="fas fa-edit" id="edit" data-bs-toggle="modal"
+                      data-bs-target="#editModal"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Wine 7</h3>
+              <h4 class="product-price">Something</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-8" class="single-product">
+            <div class="part-1">
+              <ul>
+                <li><a href="#"><i class="fas fa-edit" id="edit" data-bs-toggle="modal"
+                      data-bs-target="#editModal"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Wine 8</h3>
+              <h4 class="product-price">Something</h4>
             </div>
           </div>
         </div>
       </div>
-      </section>
+    </div>
+  </section>
+
+  <section class="section-products">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="header">
+            <h2>Add your wines and explore the library</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-3">
+        <div id="costume_product" class="single-product">
+          <div class="part-1 border">
+            <ul>
+              <li><a href="#"><i class="fas fa-plus" id="add" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"></i></a></li>
+            </ul>
+          </div>
+          <div class="part-2">
+            <h3 class="product-title">Add wine</h3>
+            <h4 class="product-price">Something from database</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal ADD-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add wine</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Name</span>
+                <input type="text" class="form-control" placeholder="Wine name" aria-label="Name:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Image url</span>
+                <input type="text" class="form-control" placeholder="Image url" aria-label="Image url:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Country</span>
+                <input type="text" class="form-control" placeholder="Country" aria-label="Country:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Year</span>
+                <input type="text" class="form-control" placeholder="Year" aria-label="Year:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Type</span>
+                <input type="text" class="form-control" placeholder="Type" aria-label="Type:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">ABV(%)</span>
+                <input type="text" class="form-control" placeholder="ABV" aria-label="ABV:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Color</span>
+                <input type="text" class="form-control" placeholder="Color" aria-label="Color:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Size</span>
+                <input type="text" class="form-control" placeholder="Size" aria-label="Size:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text">.00</span>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-text">Description</span>
+                <textarea class="form-control" aria-label="Description"></textarea>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Edit-->
+      <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="editModalLabel">Edit wine</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Name</span>
+                <input type="text" class="form-control" placeholder="Wine name" aria-label="Name:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Image url</span>
+                <input type="text" class="form-control" placeholder="Image url" aria-label="Image url:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Country</span>
+                <input type="text" class="form-control" placeholder="Country" aria-label="Country:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Year</span>
+                <input type="text" class="form-control" placeholder="Year" aria-label="Year:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Type</span>
+                <input type="text" class="form-control" placeholder="Type" aria-label="Type:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">ABV(%)</span>
+                <input type="text" class="form-control" placeholder="ABV" aria-label="ABV:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Color</span>
+                <input type="text" class="form-control" placeholder="Color" aria-label="Color:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">Size</span>
+                <input type="text" class="form-control" placeholder="Size" aria-label="Size:">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text">.00</span>
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-text">Description</span>
+                <textarea class="form-control" aria-label="Description"></textarea>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </body>
 
