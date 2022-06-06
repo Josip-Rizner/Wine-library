@@ -18,12 +18,13 @@ export async function signupPost(req, res) {
     res
       .status(201)
       //.json({ message: `New user is created is with id: ${newUser._id}.` })
-      .render("mainPage/index")
+      //.render("mainPage/index")
+      .redirect("/wine")
   } catch (error) {
     const errors = userNotCreatedError(error)
     res.status(400)
       //.json({ message: errors })
-      .render("Login/login");
+      .redirect("/login")
   }
 }
 
@@ -38,11 +39,12 @@ export async function loginPost(req, res) {
     res
       .status(201)
       //.json({ message: `User logged in with id: ${currentUser._id}.` })
-      .render("mainPage/index")
+      //.render("mainPage/index")
+      .redirect("/wine")
   } catch (error) {
     res.status(400)
     //.json({ message: error.message })
-    .render("Login/login");
+    .redirect("/login")
   }
 }
 

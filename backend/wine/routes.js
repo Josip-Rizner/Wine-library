@@ -7,4 +7,5 @@ export const routerWine = Router()
 
 routerWine.post('/wine/create', createWinePost)
 routerWine.post('/wine/edit/:id', editWinePost)
-routerWine.post('/wine/show', winesGet)
+routerWine.get('/wine', winesGet)
+
