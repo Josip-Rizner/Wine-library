@@ -51,3 +51,8 @@ export async function editWine(req, id) {
   })
   return editedWine
 }
+
+export async function getWines(req) {
+  const wines = await wine.find({})
+  return wines
+}

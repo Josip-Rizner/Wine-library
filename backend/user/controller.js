@@ -1,8 +1,7 @@
 import { createCookie } from '../helpers/cookies.js'
 import { createUser, loginUser } from '../database/functions.js'
 import { userNotCreatedError } from '../helpers/errors.js'
-import fs from 'fs'
-import { response } from 'express'
+
 
 export function indexGet(req, res) {
   res.render("homePage/index");
@@ -22,7 +21,9 @@ export async function signupPost(req, res) {
       .render("mainPage/index")
   } catch (error) {
     const errors = userNotCreatedError(error)
-    res.status(400).json({ message: errors })
+    res.status(400)
+      //.json({ message: errors })
+      .render("Login/login");
   }
 }
 
@@ -39,7 +40,9 @@ export async function loginPost(req, res) {
       //.json({ message: `User logged in with id: ${currentUser._id}.` })
       .render("mainPage/index")
   } catch (error) {
-    res.status(400).json({ message: error.message })
+    res.status(400)
+    //.json({ message: error.message })
+    .render("Login/login");
   }
 }
 

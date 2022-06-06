@@ -13,10 +13,10 @@ const server = express()
 
 export default function connectToServer() {
 
-  //server.set('views', path.join('C:/Users/Josip/Documents/Faks/Diplomski/Web programiranje/Wine-library','/frontend'));
-  //const publicDirectory = path.join('C:/Users/Josip/Documents/Faks/Diplomski/Web programiranje/Wine-library', './frontend');
-  server.set('views', path.join('E:/IVAN_NEW/ivan/Web programiranje/Wine-library','/frontend'));
-  const publicDirectory = path.join('E:/IVAN_NEW/ivan/Web programiranje/Wine-library', './frontend');
+  server.set('views', path.join('C:/Users/Josip/Documents/Faks/Diplomski/Web programiranje/Wine-library','/frontend'));
+  const publicDirectory = path.join('C:/Users/Josip/Documents/Faks/Diplomski/Web programiranje/Wine-library', './frontend');
+  //server.set('views', path.join('E:/IVAN_NEW/ivan/Web programiranje/Wine-library','/frontend'));
+  //const publicDirectory = path.join('E:/IVAN_NEW/ivan/Web programiranje/Wine-library', './frontend');
   console.log(publicDirectory);
   server.use(express.static(publicDirectory))
 

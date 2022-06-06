@@ -81,7 +81,6 @@ a:hover {
 }
 
 .section-products #product-5 .part-1::before {
-    background: url("https://www.calferu.com/13578-thickbox_default/nuviana-white-wine.jpg") no-repeat center;
     background-size: cover;
 }
 
