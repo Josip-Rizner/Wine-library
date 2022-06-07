@@ -29,7 +29,6 @@ export async function editWinePost(req, res) {
       const wines = await getWines(req)
 
       res.status(201)
-        //.json({ message: wines })
         .render("mainPage/index")
       
     } catch (error) {
