@@ -36,3 +36,15 @@ export async function editWinePost(req, res) {
       res.status(400).json({ message: error })
     }
   }
+
+  export async function winesGetAll(req, res) {
+    try {
+      const wines = await getWines(req)
+
+      res.status(201)
+        .json({ message: wines })
+      
+    } catch (error) {
+      res.status(400).json({ message: error })
+    }
+  }

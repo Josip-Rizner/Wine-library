@@ -1,6 +1,6 @@
 import { Router } from 'express'
 import {createWinePost,
-    editWinePost, winesGet
+    editWinePost, winesGet,winesGetAll
 } from './controller.js'
 
 export const routerWine = Router()
@@ -8,4 +8,5 @@ export const routerWine = Router()
 routerWine.post('/wine/create', createWinePost)
 routerWine.post('/wine/edit/:id', editWinePost)
 routerWine.get('/wine', winesGet)
+routerWine.get('/wines', winesGetAll)
 
