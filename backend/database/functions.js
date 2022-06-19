@@ -35,6 +35,11 @@ export async function createWine(req) {
   return newWine
 }
 
+export async function deleteWine(ID) {
+  const document = await wine.deleteOne({ _id: ID })
+  return document
+}
+
 export async function editWine(req, id) {
   const { name, imageUrl, country, year, type, ABV, color, size, price, description } = req.body
   const editedWine = await wine.updateOne({ _id: id },{
