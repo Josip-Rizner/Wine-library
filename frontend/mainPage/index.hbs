@@ -62,8 +62,8 @@
         <div id="costume_product" class="single-product">
           <div class="part-1 border">
             <ul>
-              <li><a href="#"><i class="fas fa-plus" id="add" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"></i></a></li>
+              <li><a href="#" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"><i class="fas fa-plus" id="add" ></i></a></li>
             </ul>
           </div>
           <div class="part-2">
@@ -158,12 +158,13 @@
             </div>
             <div class="modal-body">
               <div class="input-group mb-3"> <span class="input-group-text">Name</span> <input type="text" required
-                  class="form-control" placeholder="Name" aria-label="Name:" name="name" id="name"
-                  disabled> </div>
+                  class="form-control" placeholder="Name" aria-label="Name:" name="name" id="name" disabled> </div>
               <div class="input-group mb-3"> <span class="input-group-text">Image url</span> <input type="text" required
-                  class="form-control" placeholder="Image url" aria-label="Image url:" name="imageUrl" id="imageUrl"disabled> </div>
+                  class="form-control" placeholder="Image url" aria-label="Image url:" name="imageUrl" id="imageUrl"
+                  disabled> </div>
               <div class="input-group mb-3"> <span class="input-group-text">Country</span> <input type="text"
-                  class="form-control" placeholder="Country" aria-label="Country:" name="country" id="country" disabled> </div>
+                  class="form-control" placeholder="Country" aria-label="Country:" name="country" id="country" disabled>
+              </div>
               <div class="input-group mb-3"> <span class="input-group-text">Year</span> <input type="text" required
                   class="form-control" placeholder="Year" aria-label="Year:" name="year" id="year" disabled> </div>
               <div class="input-group mb-3"> <span class="input-group-text">Type</span> <input type="text" required
@@ -175,8 +176,8 @@
               <div class="input-group mb-3"> <span class="input-group-text">Size</span> <input type="text"
                   class="form-control" placeholder="Size" aria-label="Size:" name="size" id="size" disabled> </div>
               <div class="input-group mb-3"> <span class="input-group-text">$</span> <input type="text" required
-                  class="form-control" aria-label="Amount (to the nearest dollar)" name="price" id="price" disabled> <span
-                  class="input-group-text"></span> </div>
+                  class="form-control" aria-label="Amount (to the nearest dollar)" name="price" id="price" disabled>
+                <span class="input-group-text"></span> </div>
               <div class="input-group"> <span class="input-group-text">Description</span> <textarea class="form-control"
                   aria-label="Description" name="description" id="description" disabled></textarea> </div>
             </div>
@@ -199,7 +200,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button class="btn btn-primary" type="submit">Delete</button>
+              <button class="btn btn-primary deleteWine" type="submit">Delete</button>
             </div>
           </div>
         </div>

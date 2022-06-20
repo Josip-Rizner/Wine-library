@@ -18,12 +18,32 @@ $(function () {
       }
     }
   })
+
+  let del_id;
+  $(document).on("click", ".delete", function () {
+    del_id = $(this).get(0).id
+  })
+
+  $(".deleteWine").on("click",function(){
+
+    $.ajax({
+      url: 'http://localhost:3000/wine/delete/' + del_id.replace("delete-",''),
+      type: 'DELETE',
+      dataType: 'json',
+      success: function(response) {
+          location.reload();
+          console.log(response);
+      },
+      error: function(response) {
+          console.log(response);
+      }
+  });
+  })
+  
   $.get("http://localhost:3000/wines", function (data) {
     dataForUse = data;
-
     for (let i = 0; i < data['message'].length; i++) {
-
-      $(".wines").append('<div class="col-md-6 col-lg-4 col-xl-3"> <div id="product-1" class="single-product" style="background: url(' + [data['message'][i].imageUrl] + ') no-repeat center; width: auto;"> <div class="part-1"> <span class="discount">'+ "Name:  " + data['message'][i].name + '</span> <ul> <li><a href="#"><i class="fas fa-trash" id="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"></i></a></li> <li><a href="#" class="detalji" id="' + data['message'][i]._id + '"><i class="fa fa-bars" id="details"></i></a></li> </ul> </div> <div class="part-2"> <h3 class="product-title mt-5">' + data['message'][i].price +"$" +  '</h3> <h4 class="product-price">' + data['message'][i].type +'</h4> <h5 class="product-price"></div> </div> </div>')
+      $(".wines").append('<div class="col-md-6 col-lg-4 col-xl-3"> <div id="product-1" class="single-product" style="background: url(' + [data['message'][i].imageUrl] + ') no-repeat center; width: auto;"> <div class="part-1"> <span class="discount">'+ "Name:  " + data['message'][i].name + '</span> <ul> <li><a href="#"  data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fas fa-trash delete" id="delete-' + data['message'][i]._id + '"></i></a></li> <li><a href="#" class="detalji" id="' + data['message'][i]._id + '"><i class="fa fa-bars" id="details"></i></a></li> </ul> </div> <div class="part-2"> <h3 class="product-title mt-5">' + data['message'][i].price +"$" +  '</h3> <h4 class="product-price">' + data['message'][i].type +'</h4> <h5 class="product-price"></div> </div> </div>')
     }
   });
 })
